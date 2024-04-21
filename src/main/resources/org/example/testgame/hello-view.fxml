@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="710.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.testgame.MarioController">
+   <children>
+      <ImageView fx:id="bg1" fitHeight="400.0" fitWidth="712.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bg2" fitHeight="400.0" fitWidth="712.0" layoutX="711.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bg.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="enemy" fitHeight="58.0" fitWidth="44.0" layoutX="761.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/enemy.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelPause" focusTraversable="false" layoutX="256.0" layoutY="157.0" text="PAUSE" textFill="#000000a4" visible="false">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="74.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelLose" focusTraversable="false" layoutX="266.0" layoutY="167.0" text="LOSE" textFill="#000000a4" visible="false">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="74.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="player_head" fitHeight="210.0" fitWidth="240.0" layoutX="-61.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true" scaleX="0.3" scaleY="0.3">
+         <image>
+            <Image url="@images/player_head.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player_body" fitHeight="110.0" fitWidth="180.0" layoutX="-34.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" scaleX="0.3" scaleY="0.3">
+         <image>
+            <Image url="@images/player_body.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player_legs" fitHeight="60.0" fitWidth="110.0" layoutX="6.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" scaleX="0.3" scaleY="0.3">
+         <image>
+            <Image url="@images/player_legs.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000037" height="27.0" layoutX="658.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="52.0" />
+      <Label fx:id="scoreLabel" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="665.0" layoutY="14.0" prefHeight="27.0" prefWidth="44.0" text="0" textFill="#ffd60abb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="5.0" />
+         </opaqueInsets>
+      </Label>
+      <ImageView fx:id="player_view" fitHeight="304.0" fitWidth="185.0" layoutX="102.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+   </children>
+</AnchorPane>
